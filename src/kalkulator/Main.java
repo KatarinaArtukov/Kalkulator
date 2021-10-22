@@ -11,6 +11,9 @@ public class Main {
 		String s;
 		do {
 			s= scanner.nextLine();
+			if(s.equals("")) {
+				continue;
+			}
 		} while(!s.equals("kraj"));
 	}
 
