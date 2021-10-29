@@ -23,7 +23,11 @@ public class Main {
 				System.out.println("Pogresan format naredbe");
 				continue;
 			}
-		
+			int x= Integer.parseInt(pars[0]);
+			int y= Integer.parseInt(pars[2]);
+			if(pars[1].equals("+")) {
+				System.out.println(x+y);
+			}
 		} while(!s.equals("kraj"));
 	}
 
