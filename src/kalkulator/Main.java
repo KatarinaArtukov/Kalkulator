@@ -25,10 +25,14 @@ public class Main {
 			}
 			int x= Integer.parseInt(pars[0]);
 			int y= Integer.parseInt(pars[2]);
-			if(pars[1].equals("+")) {
-				System.out.println(x+y);
+			if(pars[1].equals("-")) {
+				//System.out.println(x+y);
+				substracion(x,y);
 			}
 		} while(!s.equals("kraj"));
 	}
 
+	public static void substracion (int x, int y) {
+		System.out.println(x-y);
+	}
 }
