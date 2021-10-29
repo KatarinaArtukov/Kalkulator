@@ -25,13 +25,23 @@ public class Main {
 			}
 			int x= Integer.parseInt(pars[0]);
 			int y= Integer.parseInt(pars[2]);
+
 			if(pars[1].equals("+")) {
 				addition(x,y);
+			}
+			if(pars[1].equals("-")) {
+				substracion(x,y);
+
 			}
 		} while(!s.equals("kraj"));
 	}
 
+
 	public static void addition(int x, int y) {
 		System.out.println(x+y);
+	}
+	public static void substracion (int x, int y) {
+		System.out.println(x-y);
+
 	}
 }
